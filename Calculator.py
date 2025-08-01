@@ -13,8 +13,12 @@ elif operation == "-":
 elif operation == "*":
     result = num1 * num2  #Perform multiplication
     print(f"{num1} * {num2} = {result}")
-elif operation == "/":   
-        result = num1 / num2  #Perform division
+elif operation == "/":
+#check if the second number is zero 
+    if num2 == 0:
+        print("Error: Division by zero is not allowed.")
+    else:
+        result = num1 / num2
         print(f"{num1} / {num2} = {result}")
 else:
     print("Invalid operation. Please enter one of +, -, *, /.")
